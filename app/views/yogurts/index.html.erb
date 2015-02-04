@@ -1,0 +1,9 @@
+<h1>Yogurts Ordered</h1>
+
+<%= link_to 'New Yogurt', new_yogurt_path %>
+
+<% @yogurts.each do |y| %>
+  <p>
+    <b><%= y.flavor %></b> with <%= y.topping %> - <%= y.quantity %> oz <%= link_to "Edit", edit_yogurt_path(y) %>
+  </p>
+<% end %>

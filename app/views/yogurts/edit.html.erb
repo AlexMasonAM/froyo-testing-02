@@ -1,0 +1,10 @@
+<h1>Edit Your <%= @yogurt.flavor.capitalize %> Froyo</h1>
+
+<%= form_for @yogurt do |f| %>
+
+  <%= f.text_field :flavor, placeholder: 'flavor' %><br>
+  <%= f.text_field :topping, placeholder: 'topping' %><br>
+  <%= f.text_field :quantity, placeholder: 'quantity' %><br>
+  <%= f.submit "Update" %><br>
+
+<% end %>
